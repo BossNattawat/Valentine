@@ -1,4 +1,4 @@
-import { Sour_Gummy} from "next/font/google";
+import { Sour_Gummy } from "next/font/google";
 import "./globals.css";
 
 const SourGummy = Sour_Gummy({
@@ -17,11 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body
-        className={`${SourGummy.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${SourGummy.variable} antialiased`}>{children}</body>
     </html>
   );
 }
