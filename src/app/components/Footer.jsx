@@ -9,7 +9,7 @@ function Footer() {
         href="https://github.com/BossNattawat"
         target="blank"
       >
-        Made with ❤️
+        Made with love ❤️
       </Link>
     </footer>
   );
