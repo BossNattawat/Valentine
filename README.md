@@ -48,9 +48,9 @@ The website will be available at: **`http://localhost:3000`**
 ## 📂 File Structure
 
 ```
-📂 valentine-app
+📂 Valentine
 ├── 📁 public          # Store static assets (favicons, images, etc.)
-│   ├── 📁 screenshot  # Store project screenshots
+│   ├── 📁 screenshot  # Store project screenshot
 │   ├── ❤️ favicon.ico
 ├── 📁 components      # Reusable components
 ├── 📁 data            # Array of playful "No" responses
