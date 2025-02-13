@@ -10,8 +10,8 @@ export default function Home() {
   const [sheSaidYes, setSheSaidYes] = useState(false);
 
   function next() {
-    setIndex((index + 1) % arr.length);
-    setYesBtnSize((yesBtnSize) => yesBtnSize + 25);
+    setIndex((prevIndex) => (prevIndex + 1) % arr.length);
+    setYesBtnSize((prevSize) => prevSize + 25);
   }
 
   return (
@@ -20,6 +20,7 @@ export default function Home() {
         {sheSaidYes ? (
           <>
             <Image
+              priority
               unoptimized
               src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
               alt="gif"
@@ -32,6 +33,7 @@ export default function Home() {
         ) : (
           <>
             <Image
+              priority
               unoptimized
               src="https://gifdb.com/images/high/cute-Love-bear-roses-ou7zho5oosxnpo6k.gif"
               alt="gif"
@@ -44,7 +46,6 @@ export default function Home() {
             </h1>
             <div className="flex flex-wrap gap-5 justify-center items-center w-auto h-auto">
               <button
-                id="yesBtn"
                 style={{
                   fontSize: yesBtnSize,
                   padding: yesBtnSize / 2,
